@@ -1,0 +1,12 @@
+.nav{
+    background-color: yellow;
+}
+.nav ul {
+    list-style: none;
+    /* display: inline-block; */
+}
+.nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+.footer-nav{
+    background-color: yellowgreen;
+}
+.footer-nav ul {
+    list-style: none;
+}
+.footer-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
