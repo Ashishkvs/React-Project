@@ -1,8 +1,8 @@
 import { Navigation } from "./Navigation";
 
 export function Help() {
-    return(<>
+    return (<>
+        <Navigation />
         <h1>Help Component</h1>
-        <Navigation/>
     </>)
 }
