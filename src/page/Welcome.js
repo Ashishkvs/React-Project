@@ -1,9 +1,21 @@
+import { useState } from "react";
 import { Banner } from "./Banner";
 import { Help } from "./Help";
 
 export default function Welcome() {
+  const [showBanner,setShowBanner] = useState(false);
 
-  let showBanner = false;
+// ars -1) const showBanner = true;
+// arg -2)
+
+// const  setShowBanner =(x) => {
+//   showBanner = x
+
+// }
+
+
+
+
 
   let component = <Help/>
   if (showBanner === true) {
@@ -14,9 +26,11 @@ export default function Welcome() {
     console.log("handleBanner",enableBanner);
 
     if (enableBanner) {
-      showBanner = true;
+      // showBanner = true; // its wrong beacuse const cannot be re-assinged
+      setShowBanner(true)
     } else {
-      showBanner = false;
+      // showBanner = false;
+      setShowBanner(false)
     }
 
 
