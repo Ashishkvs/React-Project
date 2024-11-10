@@ -26,6 +26,8 @@ export default function Welcome() {
     <h1>Welcome Component</h1>
     {component}
 
+    {/* //Identify problem why button not able to change component */}
+
      <button onClick={() => handleBanner(true)}>Show Banner</button>
     <button onClick={() => handleBanner(false)}>Hide Banner</button> 
 
