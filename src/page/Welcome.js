@@ -1,23 +1,10 @@
 import { useState } from "react";
 import { Banner } from "./Banner";
-import { Help } from "./Help";
 
 export default function Welcome() {
   const [showBanner,setShowBanner] = useState(false);
 
-// ars -1) const showBanner = true;
-// arg -2)
-
-// const  setShowBanner =(x) => {
-//   showBanner = x
-
-// }
-
-
-
-
-
-  let component = <Help/>
+  let component;
   if (showBanner === true) {
     component = <Banner />
   }
