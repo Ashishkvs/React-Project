@@ -6,7 +6,7 @@ const AppSetting = {
 export default AppSetting;
 
 // simple to use 
-// declare in  file an dimport and use
+// declare in  file an import and use
 
 /// this is a goog fit if our use case is only read data from global level and share across any component
 
