@@ -1,9 +1,20 @@
 import '../css/Footer.css'
-export function Footer(){
-    return(<>
-     <ul className='footer-nav'>
-            <li><a href="/">App</a></li>
+import { useContext } from 'react';
+import { NavContext } from './NavContext'
+export function Footer() {
+    const {showBanner,setShowBanner} = useContext(NavContext);
+    console.log("showBanner", showBanner);
 
-        </ul>
+    
+
+    return (<>
+        <div className='footer-nav'>
+            <ul >
+                <li><a href="/">App</a></li>
+
+            {showBanner && <h1>Show banner is enable</h1>}
+            </ul>
+          
+        </div>
     </>)
 }
